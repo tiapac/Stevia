@@ -1,0 +1,173 @@
+J/A+A/537/A146 Stellar models with rotation. 0.8<M<120, Z=0.014 (Ekstrom+, 2012)
+================================================================================
+Grids of stellar models with rotation.
+I. Models from 0.8 to 120M_{sun}_ at solar metallicity (Z = 0.014).
+    Ekstrom S., Georgy C., Eggenberger P., Meynet G., Mowlavi N.,
+    Wyttenbach A., Granada A., Decressin T., Hirschi R., Frischknecht U.,
+    Charbonnel C., Maeder A.
+   <Astron. Astrophys. 537, A146 (2012)>
+   =2012A&A...537A.146E
+================================================================================
+ADC_Keywords: Models, evolutionary ; Mass loss ; Stars, supergiant;
+              Stars, Wolf-Rayet
+Keywords: stars: general - stars: evolution - stars: massive - stars: low-mass -
+          stars: rotation
+
+Abstract:
+    Many topical astrophysical research areas, such as the properties of
+    planet host stars, the nature of the progenitors of different types of
+    supernovae and gamma ray bursts, and the evolution of galaxies,
+    require complete and homogeneous sets of stellar models at different
+    metallicities in order to be studied during the whole of cosmic
+    history. We present here a first set of models for solar metallicity,
+    where the effects of rotation are accounted for in a homogeneous way.
+    We computed a grid of 48 different stellar evolutionary tracks, both
+    rotating and non-rotating, at Z=0.014, spanning a wide mass range from
+    0.8 to 120M_{sun}_. For each of the stellar masses considered,
+    electronic tables provide data for 400 stages along the evolutionary
+    track and at each stage, a set of 43 physical data are given. These
+    grids thus provide an extensive and detailed data basis for
+    comparisons with the observations. The rotating models start on the
+    ZAMS with a rotation rate v_ini_/v_crit_=0.4. The evolution is
+    computed until the end of the central carbon-burning phase, the early
+    AGB phase, or the core helium-flash for, respectively, the massive,
+    intermediate, and both low and very low mass stars. The initial
+    abundances are those deduced by Asplund et collaborators, which best
+    fit the observed abundances of massive stars in the solar
+    neighbourhood. We update both the opacities and nuclear reaction
+    rates, and introduce new prescriptions for the mass-loss rates as
+    stars approach the Eddington and/or the critical velocity. We account
+    for both atomic diffusion and magnetic braking in our low-mass star
+    models. The present rotating models provide a good description of the
+    average evolution of non-interacting stars. In particular, they
+    reproduce the observed MS width, the positions of the red giant and
+    supergiant stars in the HR diagram, the observed surface compositions
+    and rotational velocities. Very interestingly, the enhancement of the
+    mass loss during the RSG stage, when the luminosity becomes
+    supra-Eddington in some outer layers, help models above 15-20 Msun to
+    lose a significant part of their hydrogen envelope and evolve back
+    into the blue part of the HR diagram. This result has interesting
+    consequences for the blue to red supergiant ratio, the minimum mass
+    for stars to become WR stars, and the maximum initial mass of stars
+    that explode as type II-P supernovae.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+tables.dat    569    19200   Evolutionary tracks
+iso.dat       341    35311   Isochrnones
+files.tar    1356    54511   All the individual files for the 48 stellar
+                              tracks and 74 isochrones
+--------------------------------------------------------------------------------
+
+See also:
+   J/A+A/508/355 : Scaled solar tracks and isochrones (Bertelli+, 2009)
+
+Byte-by-byte Description of file: tables.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units        Label     Explanations
+--------------------------------------------------------------------------------
+   1-  6  F6.2  Msun         Mini      Initial mass
+   8- 12  F5.3  ---          Zini      [0.014] Initial metallicity
+      14  A1    ---          Rot       [nr] r for rotation, n for no rotation
+  16- 18  I3    ---          Line      [1/400] Number of selected point
+  20- 41 E22.15 yr           Time      Age
+  43- 53  F11.6 Msun         Mass      Actual mass
+  54- 63  F10.6 [Lsun]       logL      Luminosity in log scale
+  65- 73  F9.6  [K]          logTe     Effective temperature in log scale
+  75- 88  E14.7 ---          X         H    surface abundance (mass fraction)
+  90-103  E14.7 ---          Y         He   surface abundance (mass fraction)
+ 105-118  E14.7 ---          C12       12C  surface abundance (mass fraction)
+ 120-133  E14.7 ---          C13       13C  surface abundance (mass fraction)
+ 135-148  E14.7 ---          N14       14N  surface abundance (mass fraction)
+ 150-163  E14.7 ---          O16       16O  surface abundance (mass fraction)
+ 165-178  E14.7 ---          O17       17O  surface abundance (mass fraction)
+ 180-193  E14.7 ---          O18       18O  surface abundance (mass fraction)
+ 195-208  E14.7 ---          Ne20      20Ne surface abundance (mass fraction)
+ 210-223  E14.7 ---          Ne22      22Ne surface abundance (mass fraction)
+ 225-234  E10.3 ---          Al26      26Al surface abundance (mass fraction)
+ 236-242  F7.4  ---          QCC       Convective core mass fraction
+ 244-252  F9.6  [K]          logTe.u   Uncorrected effective temperature
+                                        in log scale (WR stars only)
+ 254-261  F8.3 [Msun/yr]     logdM/dt  Mass loss rate in log scale
+ 263-271  F9.6  [g/cm3]      log(rhoc) Central density in log scale
+ 273-281  F9.6  [K]          logTc     Central temperature in log scale
+ 283-296  E14.7 ---          Xc        H    central abundance (mass fraction)
+ 298-311  E14.7 ---          Yc        4He  central abundance (mass fraction)
+ 313-326  E14.7 ---          C12c      12C  central abundance (mass fraction)
+ 328-341  E14.7 ---          C13c      13C  central abundance (mass fraction)
+ 343-356  E14.7 ---          N14c      14N  central abundance (mass fraction)
+ 358-371  E14.7 ---          O16c      16O  central abundance (mass fraction)
+ 373-386  E14.7 ---          O17c      17O  central abundance (mass fraction)
+ 388-401  E14.7 ---          O18c      18O  central abundance (mass fraction)
+ 403-416  E14.7 ---          Ne20c     20Ne central abundance (mass fraction)
+ 418-431  E14.7 ---          Ne22c     22Ne central abundance (mass fraction)
+ 433-442  E10.3 ---          Al26c     26Al central abundance (mass fraction)
+ 444-453  E10.3 rad/s        Omegas    Surface angular velocity {Omega}_s_
+ 455-464  E10.3 rad/s        Omegac    Central angular velocity {Omega}_c_
+ 466-475  E10.3 ---          oblat     [0/1] Oblateness (R_pol_/R_eq_)
+ 477-486  E10.3 ---          dM/dtR    Rotational dM/dt correction factor
+ 488-496  E9.2  km/s         vcrit1    First critical velocity ({Omega}-limit)
+ 498-506  E9.2  km/s         vcrit2    Second critical velocity
+                                        ({Omega}{Gamma}-limit)
+ 508-516  E9.2  km/s         veq       Equatorial velocity
+ 518-526  F9.6  ---          OOc       [0/1] {Omega}_surf_/{Omega}_crit_
+ 528-536  F9.6  ---          Gedd      [0/1] Eddington factor {Gamma}
+ 538-551  E14.7 Msun/yr      dM/dtm    Mechanical equatorial mass loss dM/dt
+ 553-569 E17.10 10+53g.cm2/s Ltot      Total angular momentum
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: iso.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label     Explanations
+--------------------------------------------------------------------------------
+   1-  4  F4.1  [yr]     logAge    Initial age
+       6  A1    ---      Rot       [nr] r for rotation, n for no rotation
+   8- 14  F7.3  Msun     Mini      Initial mass
+  16- 24  F9.6  ---      Zini      [0.014] Initial metallicity
+  26- 31  F6.3  ---      OOcini    [0,0.4] Initial {Omega}_surf_/{Omega}_crit_
+  33- 40  F8.3  Msun     Mass      Actual mass at the age of the isochrone
+  43- 50  F8.4  [Lsun]   logL      Luminosity in log scale
+  54- 60  F7.4  [K]      logTe     Effective temperature in log scale
+  64- 70  F7.4  [K]      logTe.nc  Effective temperature not corrected for the
+                                    thickness of the wind (WR) in log scale
+  72- 80  F9.4  mag      Mbol      Bolometric magnitude
+  82- 90  F9.4  mag      Vmag      V-band absolute magnitude
+  93-100  F8.4  mag      U-B       U-B colour index
+ 103-110  F8.4  mag      B-V       B-V colour index
+ 113-120  F8.4  mag      B2-V1     B2-V1 colour index
+ 122-131  E10.3 cm       Rpol      Polar radius
+ 133-139  F7.4  ---      oblat     Oblateness (R_pol_/R_eq_)
+ 142-147  F6.3  [cm/s2]  logg      Polar effective surface gravity in log scale
+ 149-158  E10.3 rad/s    Oms       Surface angular velocity {Omega}_s_
+ 160-168  F9.2  km/s     Veq       Equatorial velocity
+ 170-178  F9.2  km/s     vcrit1    Critical velocity ({Omega}-limit)
+ 180-188  F9.2  km/s     vcrit2    Critical velocity ({Gamma}{Omega}-limit)
+ 190-196  F7.4  ---      OOc       Actual {Omega}_surf_/{Omega}_crit_
+ 197-204  F8.3 [Msun/yr] logdM/dtr Radiative mass loss in log scale
+ 205-212  F8.3 [Msun/yr] logdM/dtm Mechanical mass loss in log scale
+ 214-220  F7.4  ---      Gedd      Eddington factor {Gamma}
+ 222-231  E10.3 ---      H1        H  surface abundance (mass fraction)
+ 233-242  E10.3 ---      He4       4He surface abundance (mass fraction)
+ 244-253  E10.3 ---      C12       12C surface abundance (mass fraction)
+ 255-264  E10.3 ---      C13       13C surface abundance (mass fraction)
+ 266-275  E10.3 ---      N14       14N surface abundance (mass fraction)
+ 277-286  E10.3 ---      O16       16O surface abundance (mass fraction)
+ 288-297  E10.3 ---      O17       17O surface abundance (mass fraction)
+ 299-308  E10.3 ---      O18       18O surface abundance (mass fraction)
+ 310-319  E10.3 ---      Ne20      20Ne surface abundance (mass fraction)
+ 321-330  E10.3 ---      Ne22      22Ne surface abundance (mass fraction)
+ 332-341  E10.3 ---      Al26      26Al surface abundance (mass fraction)
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    Sylvia Ekstrom, Sylvia.Ekstrom(at)unige.ch
+
+History:
+  * 26-Jan-2012: Initial version
+  * 03-Apr-2012: data for "no rotation" in iso.dat corrected
+
+================================================================================
+(End)      Sylvia Ekstrom [Geneva Obs.], Patricia Vannier [CDS]     16-Dec-2011

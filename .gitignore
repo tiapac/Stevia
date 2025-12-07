@@ -1,3 +1,6 @@
+build/
+stellar_evolution_output/
+Stevia
 # Prerequisites
 *.d
 
